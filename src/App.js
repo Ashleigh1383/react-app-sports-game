@@ -1,32 +1,32 @@
 import React from "react";
 import "./App.css";
 import Game from "./components/game/Game";
-import tigers from "./assets/images/tigersnopaw.jpg";
-// import cardinals from "./assets/images/cardinal.jpg";
-// import lions from "./assets/images/lions.jpg";
-// import bears from "./assets/images/bears.jpg";
+
+import tigersLogo from "./assets/images/tigersnopaw.jpg";
+import cardinalsLogo from "./assets/images/cardinal.jpg";
+import lionsLogo from "./assets/images/lions.jpg";
+import bearsLogo from "./assets/images/bears.jpg";
 
 function App() {
   const tigers = {
     name: "Tigers",
-    logoSrc: "tigers",
+    logoSrc: tigersLogo,
   };
 
   const cardinals = {
     name: "Cardinals",
-    logoSrc: "cardinals",
+    logoSrc: cardinalsLogo,
   };
 
   const lions = {
     name: "Lions",
-    logoSrc: "lions",
+    logoSrc: lionsLogo,
   };
 
   const bears = {
     name: "Bears",
-    logoSrc: "bears",
+    logoSrc: bearsLogo,
   };
-
   return (
     <div className="App">
       <Game venue="Union 525 Gem" homeTeam={tigers} visitingTeam={cardinals} />
